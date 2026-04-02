@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Dashboard } from "./pages/Dashboard";
 import { NewIncident } from "./pages/NewIncident";
 import { IncidentDetail } from "./pages/IncidentDetail";
+import { Analytics } from "./pages/Analytics";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<Dashboard />} />
         <Route path="/new" element={<NewIncident />} />
         <Route path="/incidents/:id" element={<IncidentDetail />} />
+        <Route path="/analytics" element={<Analytics />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
