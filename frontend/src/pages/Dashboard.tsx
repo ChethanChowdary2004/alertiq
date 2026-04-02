@@ -25,15 +25,21 @@ export function Dashboard() {
 
   return (
     <div className="page">
-      <div className="page-header">
-        <div>
-          <h1>AlertIQ</h1>
-          <p className="page-subtitle">Incident Intelligence Platform</p>
-        </div>
+    <div className="page-header">
+      <div>
+        <h1>AlertIQ</h1>
+        <p className="page-subtitle">Incident Intelligence Platform</p>
+      </div>
+
+      <div style={{ display: "flex", gap: "10px" }}>
+        <button className="btn-ghost" onClick={() => navigate("/analytics")}>
+          Analytics
+        </button>
         <button className="btn-primary" onClick={() => navigate("/new")}>
           + New Incident
         </button>
       </div>
+    </div>
 
       <div className="stats-row">
         <div className="stat-card">
